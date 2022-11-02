@@ -1,0 +1,516 @@
+:root {
+    --color: #00Aba0;
+}
+body {
+    background-color: #EAEAEA;
+}
+.nav-link:hover {
+    border: 2px solid #00ABB3;
+    color: white;
+}
+.fa-user {
+    color: var(--color);
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    10% {
+        transform: rotateX(30deg);
+    }
+
+    20% {
+        transform: rotateX(45deg);
+    }
+
+    30% {
+        transform: rotate(90deg)
+    }
+
+    40% {
+        transform: rotate(120deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    60% {
+        transform: rotate(220deg);
+    }
+
+    70% {
+        transform: rotate(270deg);
+    }
+
+    80% {
+
+        transform: rotate(300deg);
+    }
+
+    90% {
+        transform: rotate(330deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.navbar-collapse {
+
+    flex-grow: 0;
+}
+.navbar {
+    position: sticky;
+    z-index: 99;
+    top: 0;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-bottom: 40px;
+
+}
+.name {
+    color: var(--color);
+    margin-bottom: 50px;
+    font-size: 64px;
+}
+.main-info {
+    margin-top: 120px;
+}
+.job {
+    margin-bottom: 60px;
+}
+.Download-CV {
+    width: 169px;
+    height: 50px;
+    border: none;
+    background-color: var(--color);
+    border-radius: 31px;
+}
+.academy-photo,.yarmouk-photo {
+    width: 40%;
+    height: 300px;
+    margin-right: 3%;
+    box-shadow: 3px 1.5px #b2b2b0;
+    border-radius: 19px;
+}
+.University,.orange {
+    height: 300px;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+.department,.GPA{
+    padding-left: 1.8rem;
+}
+.education-info {
+    width: 46%;
+    padding: 2%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.education-info span {
+    margin-left: 4%;
+}
+.Technical,.soft {
+    background-color: #EAEAEA;
+    padding: 25px;
+    width: 420px;
+    height: 450px;
+    border: 2px solid #B2B2B2;
+    box-shadow: 2px 1px 0.5px solid;
+    box-shadow: 5px 5px 5px 5px #b2b2b2;
+    border-radius: 30px;
+    margin-bottom: 1.5rem;
+}
+.frontend-skill,.programming-skill {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.Technical:hover,.soft:hover {
+    background-color: #B2B2B2;
+    transform: scale(1.1);
+}
+
+#Skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.name-skill {
+    font-size: 1.75rem;
+    padding-left: 5px;
+}
+.c-sharp {
+    padding-left: 0px;
+}
+.type-skills {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+.Certificate {
+    width: 50%;
+    height: 100%;
+}
+.card {
+    width: 306px;
+    height: 405px;
+    box-shadow: 2px 1px 0.75px #b2b2b2;
+    border-radius: 20px 20px;
+    background-color: #b2b2b2;
+}
+.Certificate {
+    width: 100%;
+    height: 200px;
+    box-shadow: 3px -5px 0.5px #d2d2d2;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.name-course {
+    position: absolute;
+    top: 168px;
+    background-color: #3C4048;
+    color: white;
+    width: 306px;
+    text-align: center;
+    height: 100px;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 0;
+    height: 34px;
+}
+.card:hover .name-course {
+    opacity: 0.7;
+    height: 40%;
+    top: 10%;
+    visibility: visible;
+    transition-duration: 0.5s;
+    font-size: 32px;
+    transition-timing-function: ease-in-out;
+    color: var(--color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.decription {
+    padding: 0.25rem 0.5rem;
+}
+
+.me-Certificate {
+
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 2rem;
+    column-gap: 1.25rem;
+    justify-content: space-evenly;
+
+}
+
+.coach-name {
+    margin-bottom: 2.5rem;
+}
+
+.coach {
+    width: 250px;
+    background-color: #b2b2b2;
+    margin-bottom: 3rem;
+    height: 420px;
+    box-shadow: 3px 2px 1px #b2b2b2;
+    border-radius: 15px;
+}
+
+.fa-whatsapp {
+    padding-right: 3rem;
+}
+.coach-info {
+    padding: 20px 10px;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+.coach-photo {
+    width: 250px;
+    height: 250px;
+    width: 250px;
+    height: 250px;
+    border-radius: 0.75rem;
+}
+.coach-contact {
+    text-decoration: none;
+    font-size: 50px;
+    text-align: center;
+}
+.coding-coach {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    column-gap: 120px;
+}
+.education-header,.header-skills,.header-certificate,.Referenc,.me-languages {
+    padding: 2rem 1.25rem;
+    font-size: 3.25rem;
+    text-align: center;
+    color: var(--color);
+}
+.fa-star {
+    color: var(--color);
+}
+.lang-skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.Languages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.english,.Arabic {
+    width: 30%;
+}
+.Star {
+    padding-left: 2.5rem;
+}
+.part {
+    background-color: #EAEAEA;
+    padding: 25px;
+    width: 374px;
+    border: 2px solid #B2B2B2;
+    box-shadow: 5px 5px 5px 5px #b2b2b2;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+}
+.English,.arabic {
+    text-align: center;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3C4048;
+    color: #EAEAEA;
+    padding: 10px 5px;
+}
+#name {
+    color: #00Aba0;
+}
+#family {
+    color: #b2b2b2
+}
+.socail {
+    display: flex;
+    flex-direction: row;
+}
+
+.reserve {
+    margin-top: 3px;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.info i {
+    font-size: 25px;
+    text-decoration: none;
+    color: #00Aba0;
+    padding: 7px;
+}
+
+.info i:hover {
+    font-size: 35px;
+}
+
+.animation {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.animation div {
+    margin-right: 0.75%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color);
+    animation-name: up-and-down;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.two {
+    animation-delay: 0.3s;
+}
+
+.three {
+    animation-delay: 0.6s;
+}
+
+@keyframes up-and-down {
+    to {
+        opacity: 0.2;
+        transform: translateY(20px);
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+    html {
+        font-size: 9px;
+    }
+    .coding-coach {
+        grid-template-columns: auto auto;
+    }
+    .me-Certificate {
+        grid-template-columns: auto auto;
+    }
+    .soft {
+        height: 390px;
+    }
+    .decription {
+        font-size: 1.5rem;
+    }
+    .part {
+        width: 240px;
+    }
+    .card {
+        height: 350px;
+    }
+    .main-info {
+        margin-top: 30px;
+    }
+    .name {
+        margin-bottom: 22px;
+    }
+    .job {
+        margin-bottom: 31px;
+        font-size: 4rem;
+    }
+    .education-info {
+        font-size: 1.5rem;
+    }
+    .Technical {
+        height: 350px;
+    }
+    .frontend-skill, .programming-skill {
+        font-size: 2.5rem;
+    }
+    .type-skills {
+        font-family: 3rem;
+    }
+    .name-skill {
+        font-size: 2.25rem;
+    }
+
+}
+@media only screen and (min-width:0px) and (max-width:480px) {
+    .footer{
+        font-size: 8px;
+    }
+    html {
+        font-size: 9px;
+    }
+
+    .main-info {
+        margin-top: 26px;
+    }
+
+    .name {
+        font-size: 3rem;
+        margin-bottom: 1.9rem;
+    }
+
+    .job {
+        margin-bottom: 22px;
+        font-size: 2rem;
+    }
+
+    .Download-CV {
+        width: 13.5rem;
+        height: 4.5rem;
+    }
+
+    .coding-coach {
+        grid-template-columns: auto;
+    }
+    .me-Certificate {
+        grid-template-columns: auto;
+    }
+    .Languages {
+        flex-direction: column;
+    }
+    .part {
+        width: 200px;
+    }
+    .Technical,.soft {
+        width: 300px;
+    }
+    .momen-photo {
+        width: 200px;
+    }
+    .University {
+        margin-bottom: 12%;
+    }
+    .academy-photo,.yarmouk-photo {
+        width: 85%;
+        height: 230px;
+    }
+    .orange p {
+        width: 88%;
+        font-size: 1.5rem;
+    }
+    .Technical, .soft {
+        width: 275px;
+        height: 448px;
+    }
+    .Technical{
+        height: 350px;
+    }
+    .name-education {
+        font-size: 1.5rem;
+    }
+    .education-info {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    .card {
+        width: 271px;
+        height: 355px;
+        font-size: 1.5rem;
+    }
+    .card:hover .name-course{
+        width: 100%;
+        height: 33%;
+        top: 21%;
+    }
+    .soft{
+        height: 414px;
+    }
+    .Languages{
+        padding-left: 7rem;
+    }
+    
+}
+
